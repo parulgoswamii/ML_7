@@ -1,0 +1,33 @@
+Article_ID,Article,KMeans_Cluster,Hierarchical_Cluster
+1,Artificial intelligence is changing technology and software development,0,0
+2,New smartphone technology introduces advanced artificial intelligence features,0,0
+3,Technology companies are developing powerful artificial intelligence systems,0,0
+4,Cybersecurity experts discuss new security technologies,0,1
+5,Cloud computing and artificial intelligence are transforming businesses,0,0
+6,Software developers are using machine learning for modern applications,0,0
+7,New computer processors improve artificial intelligence performance,0,0
+8,Technology startups invest heavily in artificial intelligence research,0,0
+9,The cricket team won the international match after an exciting game,1,0
+10,Football players prepare for the upcoming championship tournament,0,0
+11,The cricket championship attracted thousands of sports fans,1,0
+12,Football team celebrates an important victory in the league,1,0
+13,Sports players train hard for the national tournament,3,0
+14,Cricket players scored a record number of runs in the match,1,0
+15,The football championship final was watched by millions of fans,0,0
+16,Athletes prepare for the international sports competition,1,2
+17,Stock markets rise as investors respond to positive economic news,2,0
+18,Business companies report strong financial growth this year,0,0
+19,The central bank discusses interest rates and economic development,0,0
+20,New businesses attract investment from international companies,1,0
+21,Economic experts predict growth in the global market,2,0
+22,Companies increase their profits because of strong market demand,0,0
+23,Financial markets react to changes in interest rates,2,0
+24,Business leaders discuss investment and economic policies,2,0
+25,Government announces new policies for national development,3,0
+26,Political leaders discuss the upcoming national elections,3,0
+27,Parliament debates a new bill related to public services,0,3
+28,Government ministers meet to discuss national security,3,0
+29,Election campaigns begin across several states,0,0
+30,Political parties release their plans for the upcoming election,0,0
+31,The government introduces new public welfare policies,3,0
+32,Leaders discuss international relations and foreign policy,1,0

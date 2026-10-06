@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>News Clustering</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f5f7fb;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            width: 280px;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .cluster {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .article {
+            margin-top: 10px;
+            line-height: 1.5;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>News Article Clustering - Hierarchical</h1>
+    <div class="container">
+        <div class="card" style="border-top: 5px solid #2563eb;">
+            <div class="cluster">Cluster 0</div>
+            <div class="article">Artificial intelligence is changing technology and software development</div>
+        </div>
+        <div class="card" style="border-top: 5px solid #2563eb;">
+            <div class="cluster">Cluster 0</div>
+            <div class="article">New smartphone technology introduces advanced artificial intelligence features</div>
+        </div>
+        <div class="card" style="border-top: 5px solid #2563eb;">
+            <div class="cluster">Cluster 0</div>
+            <div class="article">Technology companies are developing powerful artificial intelligence systems</div>
+        </div>
+        <div class="card" style="border-top: 5px solid #dc2626;">
+            <div class="cluster">Cluster 1</div>
+            <div class="article">Cybersecurity experts discuss new security technologies</div>
+        </div>
+        <div class="card" style="border-top: 5px solid #2563eb;">
+            <div class="cluster">Cluster 0</div>
+            <div class="article">Cloud computing and artificial intelligence are transforming businesses</div>
+        </div>
+        <div class="card" style="border-top: 5px solid #2563eb;">
+            <div class="cluster">Cluster 0</div>
+            <div class="article">Software developers are using machine learning for modern applications</div>
+        </div>
+        <div class="card" style="border-top: 5px solid #2563eb;">
+            <div class="cluster">Cluster 0</div>
+            <div class="article">New computer processors improve artificial intelligence performance</div>
+        </div>
+        <div class="card" style="border-top: 5px solid #2563eb;">
+            <div class="cluster">Cluster 0</div>
+            <div class="article">Technology startups invest heavily in artificial intelligence research</div>
+        </div>
+        <div class="card" style="border-top: 5px solid #2563eb;">
+            <div class="cluster">Cluster 0</div>
+            <div class="article">The cricket team won the international match after an exciting game</div>
+        </div>
+        <div class="card" style="border-top: 5px solid #2563eb;">
+            <div class="cluster">Cluster 0</div>
+            <div class="article">Football players prepare for the upcoming championship tournament</div>
+        </div>
+        <div class="card" style="border-top: 5px solid #2563eb;">
+            <div class="cluster">Cluster 0</div>
+            <div class="article">The cricket championship attracted thousands of sports fans</div>
+        </div>
+        <div class="card" style="border-top: 5px solid #2563eb;">
+            <div class="cluster">Cluster 0</div>
+            <div class="article">Football team celebrates an important victory in the league</div>
+        </div>
+        <div class="card" style="border-top: 5px solid #2563eb;">
+            <div class="cluster">Cluster 0</div>
+            <div class="article">Sports players train hard for the national tournament</div>
+        </div>
+        <div class="card" style="border-top: 5px solid #2563eb;">
+            <div class="cluster">Cluster 0</div>
+            <div class="article">Cricket players scored a record number of runs in the match</div>
+        </div>
+        <div class="card" style="border-top: 5px solid #2563eb;">
+            <div class="cluster">Cluster 0</div>
+            <div class="article">The football championship final was watched by millions of fans</div>
+        </div>
+        <div class="card" style="border-top: 5px solid #16a34a;">
+            <div class="cluster">Cluster 2</div>
+            <div class="article">Athletes prepare for the international sports competition</div>
+        </div>
+        <div class="card" style="border-top: 5px solid #2563eb;">
+            <div class="cluster">Cluster 0</div>
+            <div class="article">Stock markets rise as investors respond to positive economic news</div>
+        </div>
+        <div class="card" style="border-top: 5px solid #2563eb;">
+            <div class="cluster">Cluster 0</div>
+            <div class="article">Business companies report strong financial growth this year</div>
+        </div>
+        <div class="card" style="border-top: 5px solid #2563eb;">
+            <div class="cluster">Cluster 0</div>
+            <div class="article">The central bank discusses interest rates and economic development</div>
+        </div>
+        <div class="card" style="border-top: 5px solid #2563eb;">
+            <div class="cluster">Cluster 0</div>
+            <div class="article">New businesses attract investment from international companies</div>
+        </div>
+        <div class="card" style="border-top: 5px solid #2563eb;">
+            <div class="cluster">Cluster 0</div>
+            <div class="article">Economic experts predict growth in the global market</div>
+        </div>
+        <div class="card" style="border-top: 5px solid #2563eb;">
+            <div class="cluster">Cluster 0</div>
+            <div class="article">Companies increase their profits because of strong market demand</div>
+        </div>
+        <div class="card" style="border-top: 5px solid #2563eb;">
+            <div class="cluster">Cluster 0</div>
+            <div class="article">Financial markets react to changes in interest rates</div>
+        </div>
+        <div class="card" style="border-top: 5px solid #2563eb;">
+            <div class="cluster">Cluster 0</div>
+            <div class="article">Business leaders discuss investment and economic policies</div>
+        </div>
+        <div class="card" style="border-top: 5px solid #2563eb;">
+            <div class="cluster">Cluster 0</div>
+            <div class="article">Government announces new policies for national development</div>
+        </div>
+        <div class="card" style="border-top: 5px solid #2563eb;">
+            <div class="cluster">Cluster 0</div>
+            <div class="article">Political leaders discuss the upcoming national elections</div>
+        </div>
+        <div class="card" style="border-top: 5px solid #9333ea;">
+            <div class="cluster">Cluster 3</div>
+            <div class="article">Parliament debates a new bill related to public services</div>
+        </div>
+        <div class="card" style="border-top: 5px solid #2563eb;">
+            <div class="cluster">Cluster 0</div>
+            <div class="article">Government ministers meet to discuss national security</div>
+        </div>
+        <div class="card" style="border-top: 5px solid #2563eb;">
+            <div class="cluster">Cluster 0</div>
+            <div class="article">Election campaigns begin across several states</div>
+        </div>
+        <div class="card" style="border-top: 5px solid #2563eb;">
+            <div class="cluster">Cluster 0</div>
+            <div class="article">Political parties release their plans for the upcoming election</div>
+        </div>
+        <div class="card" style="border-top: 5px solid #2563eb;">
+            <div class="cluster">Cluster 0</div>
+            <div class="article">The government introduces new public welfare policies</div>
+        </div>
+        <div class="card" style="border-top: 5px solid #2563eb;">
+            <div class="cluster">Cluster 0</div>
+            <div class="article">Leaders discuss international relations and foreign policy</div>
+        </div>
+    </div>
+</body>
+
+</html>
